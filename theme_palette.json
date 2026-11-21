@@ -1,0 +1,96 @@
+{
+  "themeName": "Phayao Home Cook (พะเยาโฮมคุก)",
+  "packageId": "com.phayaohomecook.theme",
+  "version": "1.0.0",
+  "style": "Lanna Burgundy, Warm Bamboo Gold & Ivory Cream",
+  "brandColors": {
+    "primaryBurgundy": {
+      "hex": "#7A1038",
+      "rgb": "122, 16, 56",
+      "usage": "แถบหัวข้อ (App Bar), ไอคอนหลัก, แถบนำทางด้านล่าง, ปุ่มหลัก"
+    },
+    "primaryDarkPlum": {
+      "hex": "#4E0822",
+      "rgb": "78, 8, 34",
+      "usage": "Status Bar, พื้นหลัง Dark Mode, เงาไอคอน"
+    },
+    "accentRoseMagenta": {
+      "hex": "#B9245B",
+      "rgb": "185, 36, 91",
+      "usage": "Badge แจ้งเตือน, บับเบิลแชทฝั่งส่ง, ปุ่มส่งข้อความ, ปุ่ม Active"
+    },
+    "goldBamboo": {
+      "hex": "#E3AD52",
+      "rgb": "227, 173, 82",
+      "usage": "ขอบเหรียญไอคอน, เส้นคั่นลายล้านนา, ไอคอนสถานะ, ไฮไลต์"
+    },
+    "goldHighlight": {
+      "hex": "#F7DA94",
+      "rgb": "247, 218, 148",
+      "usage": "ลายดอกประจำยามสีทอง, ประกายแสง, ขอบสว่าง"
+    },
+    "surfaceCream": {
+      "hex": "#FCF5E5",
+      "rgb": "252, 245, 229",
+      "usage": "พื้นหลังหน้าจอโหมดสว่าง, การ์ดรายการ, พื้นหลังแชท, สีสัญลักษณ์บนไอคอน"
+    },
+    "surfaceWarmSand": {
+      "hex": "#F3E4CA",
+      "rgb": "243, 228, 202",
+      "usage": "ช่องค้นหา, พื้นปุ่มคีย์บอร์ด, พื้นหลังรอง (Secondary Container)"
+    },
+    "textEspresso": {
+      "hex": "#3D1622",
+      "rgb": "61, 22, 34",
+      "usage": "ตัวอักษรหลักบนพื้นสีครีม"
+    },
+    "textMutedPlum": {
+      "hex": "#7B505C",
+      "rgb": "123, 80, 92",
+      "usage": "ตัวอักษรรอง, เวลาแจ้งเตือน, ข้อความตัวอย่าง"
+    },
+    "mascotWarmBrown": {
+      "hex": "#4B2618",
+      "rgb": "75, 38, 24",
+      "usage": "สีตา/รองเท้ามาสคอท, ขอบเข้มโทนอุ่น"
+    }
+  },
+  "samsungThemeParkMapping": {
+    "systemTheme": {
+      "primaryColor": "#7A1038",
+      "secondaryColor": "#B9245B",
+      "accentColor": "#E3AD52",
+      "backgroundLight": "#FCF5E5",
+      "backgroundDark": "#4E0822",
+      "cardSurfaceLight": "#FFFBF2",
+      "cardSurfaceDark": "#630C2D",
+      "textOnLight": "#3D1622",
+      "textOnDark": "#FCF5E5"
+    },
+    "quickPanel": {
+      "panelBackground": "#F7EBD5",
+      "panelBackgroundDark": "#4E0822",
+      "toggleActiveBg": "#7A1038",
+      "toggleActiveIcon": "#F7DA94",
+      "toggleInactiveBg": "#EAD7BA",
+      "toggleInactiveIcon": "#7B505C",
+      "brightnessBar": "#B9245B"
+    },
+    "keyboardKeysCafe": {
+      "backgroundImage": "assets/keyboard/keyboard_background.png",
+      "keySurface": "#FFFBF2",
+      "keySurfacePressed": "#F3DFBE",
+      "keyText": "#4E0822",
+      "functionKeyBg": "#EAD7BA",
+      "actionEnterKeyBg": "#B9245B",
+      "actionEnterKeyText": "#FCF5E5",
+      "keyBorder": "#E3AD52"
+    },
+    "iconPack": {
+      "shape": "Circle",
+      "iconBgColor": "#7A1038",
+      "iconTrayColor": "#E3AD52",
+      "iconGlyphColor": "#FCF5E5"
+    }
+  }
+}
