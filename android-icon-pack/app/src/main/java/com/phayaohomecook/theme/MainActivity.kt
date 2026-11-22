@@ -1,6 +1,7 @@
 package com.phayaohomecook.theme
 
 import android.app.WallpaperManager
+import android.content.ComponentName
 import android.content.ContentValues
 import android.content.Intent
 import android.graphics.Bitmap
@@ -129,6 +130,11 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        // Featured: 1-Tap Animated Live Wallpaper (Moving Mascot on Lock Screen!)
+        root.addView(createButton(getString(R.string.btn_apply_live_wallpaper), gold, burgundyDark) {
+            openLiveWallpaperPicker()
+        })
+
         // 1-Tap Full Wallpaper Bundle (Lock + Home Light)
         root.addView(createButton(getString(R.string.btn_apply_pack_light), burgundy) {
             applyBothWallpapers(R.drawable.wallpaper_lockscreen, R.drawable.wallpaper_homescreen_light, "โทนครีมอบอุ่น")
@@ -183,6 +189,29 @@ class MainActivity : AppCompatActivity() {
 
         scroll.addView(root)
         setContentView(scroll)
+    }
+
+    private fun openLiveWallpaperPicker() {
+        try {
+            val intent = Intent(WallpaperManager.ACTION_CHANGE_LIVE_WALLPAPER).apply {
+                putExtra(
+                    WallpaperManager.EXTRA_LIVE_WALLPAPER_COMPONENT,
+                    ComponentName(this@MainActivity, PhayaoLiveWallpaperService::class.java)
+                )
+            }
+            Toast.makeText(
+                this,
+                "กด \"ตั้งเป็นวอลเปเปอร์\" แล้วเลือก \"หน้าจอล็อกและหน้าจอหลัก\" (แตะจอเพื่อให้มาสคอทกระโดดได้!)",
+                Toast.LENGTH_LONG
+            ).show()
+            startActivity(intent)
+        } catch (_: Exception) {
+            try {
+                startActivity(Intent(WallpaperManager.ACTION_LIVE_WALLPAPER_CHOOSER))
+            } catch (e: Exception) {
+                Toast.makeText(this, "เครื่องนี้ไม่รองรับหน้าเลือก Live Wallpaper โดยตรง: ${e.message}", Toast.LENGTH_LONG).show()
+            }
+        }
     }
 
     private fun applyBothWallpapers(lockRes: Int, homeRes: Int, label: String) {

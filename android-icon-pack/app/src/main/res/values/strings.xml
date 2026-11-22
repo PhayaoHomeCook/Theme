@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">พะเยาโฮมคุก ธีม</string>
+    <string name="live_wallpaper_label">พะเยาโฮมคุก (มาสคอทเคลื่อนไหว)</string>
+    <string name="live_wallpaper_desc">วอลเปเปอร์เคลื่อนไหวมาสคอทพะเยาโฮมคุก โบกมือขยับได้พร้อมดาวทองวิบวับและกว๊านพะเยา</string>
     <string name="theme_title">พะเยาโฮมคุก ธีม</string>
     <string name="theme_subtitle">Phayao Home Cook Android Theme • เลือดหมู-ทองล้านนา</string>
+    <string name="btn_apply_live_wallpaper">✨ ตั้งวอลเปเปอร์เคลื่อนไหว (มาสคอทขยับได้!)</string>
     <string name="btn_apply_pack_light">1 แตะ: ตั้งวอลเปเปอร์ครบชุด (โทนครีมอบอุ่น)</string>
     <string name="btn_apply_pack_dark">1 แตะ: ตั้งวอลเปเปอร์ครบชุด (โทนเลือดหมูเข้ม)</string>
     <string name="btn_apply_icons">เปลี่ยนชุดไอคอน 36 แบบทั้งเครื่องทันที</string>
