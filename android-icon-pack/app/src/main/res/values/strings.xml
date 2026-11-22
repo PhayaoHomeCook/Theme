@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">พะเยาโฮมคุก ธีม</string>
+    <string name="theme_title">พะเยาโฮมคุก ธีม</string>
+    <string name="theme_subtitle">Phayao Home Cook Android Theme • เลือดหมู-ทองล้านนา</string>
+    <string name="btn_apply_pack_light">1 แตะ: ตั้งวอลเปเปอร์ครบชุด (โทนครีมอบอุ่น)</string>
+    <string name="btn_apply_pack_dark">1 แตะ: ตั้งวอลเปเปอร์ครบชุด (โทนเลือดหมูเข้ม)</string>
+    <string name="btn_apply_icons">เปลี่ยนชุดไอคอน 36 แบบทั้งเครื่องทันที</string>
+    <string name="btn_save_kb_chat">บันทึกรูปคีย์บอร์ดไทย &amp; พื้นหลังแชทลงอัลบั้ม</string>
+    <string name="btn_open_gboard">เปิดตั้งค่าคีย์บอร์ด Gboard</string>
+    <string name="btn_open_ui_color">เปิดตั้งค่าสีระบบ / วอลเปเปอร์เครื่อง</string>
+    <string name="icon_pack_tip">เคล็ดลับสำหรับ vivo:\n1. กดปุ่มตั้งวอลเปเปอร์ด้านบนก่อน แล้วไปที่ สี UI เพื่อเปลี่ยนแผงควบคุมเป็นโทนเลือดหมู-ทอง\n2. กดบันทึกรูปคีย์บอร์ดลงอัลบั้ม แล้วกดเปิด Gboard → ธีม → ธีมของฉัน (+)\n3. หากใช้ Nova Launcher / Smart Launcher กดปุ่มเปลี่ยนชุดไอคอนด้านบนได้เลย!</string>
+</resources>

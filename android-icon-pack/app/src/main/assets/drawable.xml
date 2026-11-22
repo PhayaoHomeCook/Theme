@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <version>1</version>
+    <category title="Phayao Home Cook" />
+    <item drawable="ic_phayao_mascot" />
+    <item drawable="ic_food" />
+    <item drawable="ic_lanna_flower" />
+    <item drawable="ic_home" />
+
+    <category title="Communication &amp; Social" />
+    <item drawable="ic_phone" />
+    <item drawable="ic_messages" />
+    <item drawable="ic_line" />
+    <item drawable="ic_contacts" />
+    <item drawable="ic_mail" />
+    <item drawable="ic_facebook" />
+    <item drawable="ic_instagram" />
+    <item drawable="ic_tiktok" />
+    <item drawable="ic_share" />
+
+    <category title="Media &amp; Daily Apps" />
+    <item drawable="ic_camera" />
+    <item drawable="ic_gallery" />
+    <item drawable="ic_music" />
+    <item drawable="ic_video" />
+    <item drawable="ic_browser" />
+    <item drawable="ic_maps" />
+    <item drawable="ic_weather" />
+    <item drawable="ic_wallet" />
+    <item drawable="ic_shopping" />
+    <item drawable="ic_store" />
+
+    <category title="Tools &amp; System" />
+    <item drawable="ic_settings" />
+    <item drawable="ic_clock" />
+    <item drawable="ic_calendar" />
+    <item drawable="ic_calculator" />
+    <item drawable="ic_files" />
+    <item drawable="ic_notes" />
+    <item drawable="ic_search" />
+    <item drawable="ic_flashlight" />
+    <item drawable="ic_security" />
+    <item drawable="ic_bell" />
+    <item drawable="ic_bookmark" />
+    <item drawable="ic_heart" />
+    <item drawable="ic_emoji" />
+</resources>

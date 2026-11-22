@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Phayao Home Cook (พะเยาโฮมคุก) Brand Palette -->
+    <color name="phayao_burgundy">#7A1038</color>
+    <color name="phayao_burgundy_dark">#4E0822</color>
+    <color name="phayao_burgundy_light">#981A4B</color>
+    <color name="phayao_rose_accent">#B9245B</color>
+    <color name="phayao_gold">#E3AD52</color>
+    <color name="phayao_gold_light">#F7DA94</color>
+    <color name="phayao_gold_dark">#B27626</color>
+    <color name="phayao_cream">#FCF5E5</color>
+    <color name="phayao_sand">#F3E4CA</color>
+    <color name="phayao_card">#FFFBF2</color>
+    <color name="phayao_text_dark">#3D1622</color>
+    <color name="phayao_text_muted">#7B505C</color>
+
+    <!-- Material 3 Light Scheme -->
+    <color name="md_theme_light_primary">#7A1038</color>
+    <color name="md_theme_light_onPrimary">#FCF5E5</color>
+    <color name="md_theme_light_primaryContainer">#FFD9E1</color>
+    <color name="md_theme_light_onPrimaryContainer">#3E001A</color>
+    <color name="md_theme_light_secondary">#B9245B</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#F3E4CA</color>
+    <color name="md_theme_light_onSecondaryContainer">#3D1622</color>
+    <color name="md_theme_light_tertiary">#B27626</color>
+    <color name="md_theme_light_onTertiary">#FFFFFF</color>
+    <color name="md_theme_light_tertiaryContainer">#F7DA94</color>
+    <color name="md_theme_light_onTertiaryContainer">#3A2000</color>
+    <color name="md_theme_light_background">#FCF5E5</color>
+    <color name="md_theme_light_onBackground">#3D1622</color>
+    <color name="md_theme_light_surface">#FCF5E5</color>
+    <color name="md_theme_light_onSurface">#3D1622</color>
+    <color name="md_theme_light_surfaceVariant">#F3E4CA</color>
+    <color name="md_theme_light_onSurfaceVariant">#7B505C</color>
+    <color name="md_theme_light_outline">#D4B483</color>
+
+    <!-- Material 3 Dark Scheme -->
+    <color name="md_theme_dark_primary">#F7DA94</color>
+    <color name="md_theme_dark_onPrimary">#4E0822</color>
+    <color name="md_theme_dark_primaryContainer">#7A1038</color>
+    <color name="md_theme_dark_onPrimaryContainer">#FCF5E5</color>
+    <color name="md_theme_dark_secondary">#E3AD52</color>
+    <color name="md_theme_dark_onSecondary">#3E001A</color>
+    <color name="md_theme_dark_background">#2B0514</color>
+    <color name="md_theme_dark_onBackground">#FCF5E5</color>
+    <color name="md_theme_dark_surface">#3B081C</color>
+    <color name="md_theme_dark_onSurface">#FCF5E5</color>
+</resources>
