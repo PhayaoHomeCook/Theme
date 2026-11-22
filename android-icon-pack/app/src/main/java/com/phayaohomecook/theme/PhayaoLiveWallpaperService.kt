@@ -15,6 +15,17 @@ import kotlin.random.Random
 
 class PhayaoLiveWallpaperService : WallpaperService() {
 
+    private data class Sparkle(
+        var xNorm: Float,
+        var yNorm: Float,
+        var speedY: Float,
+        var driftAmp: Float,
+        var phase: Float,
+        var radius: Float,
+        var isBurst: Boolean = false,
+        var life: Float = 1f
+    )
+
     override fun onCreateEngine(): Engine = PhayaoLiveEngine()
 
     private inner class PhayaoLiveEngine : Engine() {
@@ -43,17 +54,6 @@ class PhayaoLiveWallpaperService : WallpaperService() {
         private val starPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
             style = Paint.Style.FILL
         }
-
-        private data class Sparkle(
-            var xNorm: Float,
-            var yNorm: Float,
-            var speedY: Float,
-            var driftAmp: Float,
-            var phase: Float,
-            var radius: Float,
-            var isBurst: Boolean = false,
-            var life: Float = 1f
-        )
 
         private val ambientSparkles = MutableList(22) {
             Sparkle(
