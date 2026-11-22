@@ -315,11 +315,29 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun openGboardOrInputSettings() {
+        val gboardComponents = listOf(
+            android.content.ComponentName(
+                "com.google.android.inputmethod.latin",
+                "com.google.android.apps.inputmethod.libs.framework.preference.SettingsActivity"
+            ),
+            android.content.ComponentName(
+                "com.google.android.inputmethod.latin",
+                "com.android.inputmethod.latin.settings.SettingsActivity"
+            )
+        )
+        for (comp in gboardComponents) {
+            try {
+                startActivity(Intent().setComponent(comp))
+                Toast.makeText(this, "เลือก ธีม → ธีมของฉัน (+) → อัลบั้ม PhayaoHomeCook", Toast.LENGTH_LONG).show()
+                return
+            } catch (_: Exception) {}
+        }
         val gboard = packageManager.getLaunchIntentForPackage("com.google.android.inputmethod.latin")
         if (gboard != null) {
             Toast.makeText(this, "เลือก ธีม → ธีมของฉัน (+) → อัลบั้ม PhayaoHomeCook", Toast.LENGTH_LONG).show()
             startActivity(gboard)
         } else {
+            Toast.makeText(this, "แตะที่ Gboard → ธีม → ธีมของฉัน (+) → อัลบั้ม PhayaoHomeCook", Toast.LENGTH_LONG).show()
             startActivity(Intent(Settings.ACTION_INPUT_METHOD_SETTINGS))
         }
     }
