@@ -3,6 +3,7 @@ package com.phayaohomecook.theme
 import android.app.WallpaperManager
 import android.content.ComponentName
 import android.content.ContentValues
+import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
@@ -134,6 +135,59 @@ class MainActivity : AppCompatActivity() {
         root.addView(createButton(getString(R.string.btn_apply_live_wallpaper), gold, burgundyDark) {
             openLiveWallpaperPicker()
         })
+
+        // Live Wallpaper Interactive Effects Settings Card (v1.2.0)
+        val prefs = getSharedPreferences(PhayaoLiveWallpaperService.PREFS_NAME, Context.MODE_PRIVATE)
+        val fxCard = LinearLayout(this).apply {
+            orientation = LinearLayout.VERTICAL
+            setPadding(34, 28, 34, 24)
+            background = GradientDrawable().apply {
+                cornerRadius = 30f
+                setColor(bgSand)
+                setStroke(2, gold)
+            }
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply { bottomMargin = 24 }
+        }
+
+        fxCard.addView(TextView(this).apply {
+            text = "✨ ตั้งค่าลูกเล่นมาสคอทเคลื่อนไหว"
+            textSize = 15f
+            setTypeface(null, Typeface.BOLD)
+            setTextColor(burgundyDark)
+            setPadding(0, 0, 0, 12)
+        })
+
+        fun addEffectSwitch(label: String, key: String, defaultVal: Boolean) {
+            val row = LinearLayout(this).apply {
+                orientation = LinearLayout.HORIZONTAL
+                gravity = Gravity.CENTER_VERTICAL
+                setPadding(0, 8, 0, 8)
+            }
+            val tv = TextView(this).apply {
+                text = label
+                textSize = 13.5f
+                setTextColor(textDark)
+                layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
+            }
+            val sw = Switch(this).apply {
+                isChecked = prefs.getBoolean(key, defaultVal)
+                setOnCheckedChangeListener { _, checked ->
+                    prefs.edit().putBoolean(key, checked).apply()
+                }
+            }
+            row.addView(tv)
+            row.addView(sw)
+            fxCard.addView(row)
+        }
+
+        addEffectSwitch("สลับ 4 ท่าทางอัตโนมัติ (แตะจอก็สลับได้)", PhayaoLiveWallpaperService.KEY_AUTO_CYCLE, true)
+        addEffectSwitch("ข้อความทักทายภาษาไทยตามช่วงเวลา", PhayaoLiveWallpaperService.KEY_SPEECH_BUBBLE, true)
+        addEffectSwitch("โคมลอยล้านนา & ดาวทองวิบวับ", PhayaoLiveWallpaperService.KEY_LANTERNS, true)
+        addEffectSwitch("เอียงมือถือ 3D Parallax", PhayaoLiveWallpaperService.KEY_PARALLAX, true)
+        root.addView(fxCard)
 
         // 1-Tap Full Wallpaper Bundle (Lock + Home Light)
         root.addView(createButton(getString(R.string.btn_apply_pack_light), burgundy) {
